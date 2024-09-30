@@ -11,6 +11,8 @@ module.exports = {
       red: colors.red,
       blue: colors.sky,
       yellow: colors.amber,
+      stone: colors.stone,
+      zinc: colors.zinc,
     }
   }
 }
