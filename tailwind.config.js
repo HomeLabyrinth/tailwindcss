@@ -1,18 +1,34 @@
-// tailwind.config.js
-const colors = require('tailwindcss/colors')
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
     colors: {
-      // Build your palette here
-      transparent: 'transparent',
-      current: 'currentColor',
-      gray: colors.trueGray,
-      red: colors.red,
-      blue: colors.sky,
-      yellow: colors.amber,
-      stone: colors.stone,
-      zinc: colors.zinc,
+      'blue': '#1fb6ff',
+      'pink': '#ff49db',
+      'orange': '#ff7849',
+      'green': '#13ce66',
+      'gray-dark': '#273444',
+      'gray': '#8492a6',
+      'gray-light': '#d3dce6',
+      'stone': '#1c1917',
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
+    extend: {
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      }
     }
   }
 }
